@@ -1,10 +1,10 @@
-# vue-http
+# vue-httpd
 
 一个极简的命令行静态文件服务器，专为 Vue 单页应用打包后的预览而设计。
 
 ## 背景
 
-Vue 项目打包后生成的是静态文件，以前可以直接双击 `index.html` 在浏览器中预览。但随着浏览器安全策略越来越严格（如 CORS、文件协议限制等），本地直接打开会遇到各种问题。`vue-http` 就是为了解决这个问题而生的——**一键将当前目录作为静态服务器运行，并自动支持单页应用的路由回退**。
+Vue 项目打包后生成的是静态文件，以前可以直接双击 `index.html` 在浏览器中预览。但随着浏览器安全策略越来越严格（如 CORS、文件协议限制等），本地直接打开会遇到各种问题。`vue-httpd` 就是为了解决这个问题而生的——**一键将当前目录作为静态服务器运行，并自动支持单页应用的路由回退**。
 
 ## 特性
 
@@ -17,13 +17,13 @@ Vue 项目打包后生成的是静态文件，以前可以直接双击 `index.ht
 ## 安装
 
 ```bash
-npm install -g vue-http
+npm install -g vue-httpd
 ```
 
 或者本地临时试用：
 
 ```bash
-npx vue-http
+npx vue-httpd
 ```
 
 ## 用法
@@ -33,7 +33,7 @@ npx vue-http
 在当前目录启动服务：
 
 ```bash
-vue-http
+vue-httpd
 ```
 
 输出示例：
@@ -52,13 +52,13 @@ vue-http
 ### 指定目录
 
 ```bash
-vue-http ./dist
+vue-httpd ./dist
 ```
 
 ### 指定端口
 
 ```bash
-vue-http --port 8080
+vue-httpd --port 8080
 ```
 
 如果 `8080` 被占用，会自动尝试 `8081`、`8082`……
@@ -66,7 +66,7 @@ vue-http --port 8080
 ### 指定回退文件
 
 ```bash
-vue-http --fallback app.html
+vue-httpd --fallback app.html
 ```
 
 如果 `app.html` 不存在，会自动尝试 `index.html`；如果还没有，则尝试目录下任意一个 `.html` 文件。
@@ -74,8 +74,8 @@ vue-http --fallback app.html
 ### 组合使用
 
 ```bash
-vue-http --port 3000 ./dist
-vue-http --port 8080 --fallback app.html ./dist
+vue-httpd --port 3000 ./dist
+vue-httpd --port 8080 --fallback app.html ./dist
 ```
 
 ## 命令行参数
@@ -96,10 +96,10 @@ vue-http --port 8080 --fallback app.html ./dist
 cd my-vue-app/dist
 
 # 启动预览服务
-vue-http
+vue-httpd
 
 # 或指定端口
-vue-http -p 8080
+vue-httpd -p 8080
 ```
 
 然后在浏览器中访问输出的地址即可。

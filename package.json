@@ -1,10 +1,10 @@
 {
-  "name": "vue-http",
-  "version": "3.0.1",
+  "name": "vue-httpd",
+  "version": "4.0.0",
   "description": "vue打包后是静态文件，以前可以双击打开预览，但是浏览器限制越来越严格，然后就开发了这个命令行工具，一个快速把当前文件夹当作是静态目录，找不到的文件默认映射到index.html",
-  "main": "bin/vue-http.js",
+  "main": "bin/vue-httpd.js",
   "bin": {
-    "vue-http": "./bin/vue-http.js"
+    "vue-httpd": "./bin/vue-httpd.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rzl/vue-http.git"
+    "url": "git+https://github.com/rzl/vue-httpd.git"
   },
   "author": "rzl",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rzl/vue-http/issues"
+    "url": "https://github.com/rzl/vue-httpd/issues"
   },
-  "homepage": "https://github.com/rzl/vue-http#readme",
+  "homepage": "https://github.com/rzl/vue-httpd#readme",
   "files": [
     "bin/",
     "README.md"

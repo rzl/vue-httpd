@@ -41,7 +41,7 @@ function parseArgs() {
 
 function showHelp() {
   console.log(`
-Usage: vue-http [options] [directory]
+Usage: vue-httpd [options] [directory]
 
 Options:
   -p, --port <number>      指定端口 (默认: 6000)
@@ -50,11 +50,11 @@ Options:
   -h, --help               显示帮助信息
 
 Examples:
-  vue-http
-  vue-http ./dist
-  vue-http --port 8080
-  vue-http --fallback app.html
-  vue-http --port 8080 ./dist
+  vue-httpd
+  vue-httpd ./dist
+  vue-httpd --port 8080
+  vue-httpd --fallback app.html
+  vue-httpd --port 8080 ./dist
 `);
 }
 
